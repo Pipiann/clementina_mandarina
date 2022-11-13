@@ -4,7 +4,6 @@
 // 4. Salir
 
 
-
 const remera ={
     talle: 4,
     color: 'azul',
@@ -20,42 +19,53 @@ const body ={
 }
 
 let opcionMenu = 0;
-let remeraComprada=0;
-let bodyComprada=0;
-let carritoTotal= bodyComprada + remeraComprada;
-let carritoTotalPrecio=(remera.precio * remeraComprada) + (body.precio * bodyComprada);
+let remeraComprada = {}
+let bodyComprada = {}
 
-function elegirRemera () {
+let carrito = []
+
+
+const elegirRemera = function () {
     let remeraComprada= parseInt (prompt("cuantas remeras desea comprar?"))
     if (remera.stock < remeraComprada) {
         alert ("No hay tanta cantidad de Remeras")
     } else {
         alert ("se agregó al carrito la compra")
     }
-    
+   
+    console.log (remeraComprada)
+
 }
-function elegirBody () {
+const elegirBody = function () {
     let bodyComprada= parseInt (prompt("cuantos bodys desea comprar?"))
     if (body.stock < bodyComprada) {
         alert ("No hay tanta cantidad de Bodys")
     } else {
         alert ("se agregó al carrito la compra")
     }
+    console.log (bodyComprada)
     
 }
 
-function carritoCompra ( bodyComprada, remeraComprada) {
-           
-    let carritoTotal=parseInt(remeraComprada + bodyComprada);
-    console.log (carritoTotal)
-    alert (`compraste un total de ${carritoTotal} productos`);
-    let carritoTotalPrecio= (remera.precio * remeraComprada) + (body.precio * bodyComprada);
-    alert (`Comprastes ${elegirRemera} Remeras y ${elegirBody} bodys, el total a pagar es ${carritoTotalPrecio}`);
+function carritoCompra () {
+    carrito.push ({remeraComprada,bodyComprada})
+    console.log (carrito)
+
+    carrito.forEach ( (carritoFinal) => {
+        alert (`lleva ${remeraComprada} remeras y cada una sale un precio de ${remera.precio} tambien lleva ${bodyComprada} bodys y cada uno tiene un precio de ${body.precio}`)
+    }
+    )
+    const carritoTotalPrecio= carrito.reduce((acc,el) => acc +el.remeraComprada *remera.precio,0)
+    console.log (`el total a pagar es ${carritoTotalPrecio}`)      
+    // let carritoTotal=parseInt(remeraComprada + bodyComprada);
+    // console.log (carritoTotal)
+    // alert (`compraste un total de ${carritoTotal} productos`);
+    // let carritoTotalPrecio= (remera.precio * remeraComprada) + (body.precio * bodyComprada);
+    // alert (`Comprastes ${elegirRemera} Remeras y ${elegirBody} bodys, el total a pagar es ${carritoTotalPrecio}`);
 }
 
-// function carritoTotalPrecio ()
 
-
+ 
 
 do{
     opcionMenu = prompt ("Ingresa tu opción: \n1. Elegir Remera   \n2.Elegir Body \n3.Finalizar Carrito \n4.Salir")
@@ -84,3 +94,4 @@ do{
     }
 
 } while (opcionMenu !=4);
+
