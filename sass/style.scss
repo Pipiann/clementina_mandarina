@@ -1,0 +1,25 @@
+@import "base/variables";
+@import "components/index";
+@import "components/productos";
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// -------- FLEXBOX----------------------
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -57,11 +57,7 @@ function carritoCompra () {
     )
     const carritoTotalPrecio= carrito.reduce((acc,el) => acc +el.remeraComprada *remera.precio,0)
     console.log (`el total a pagar es ${carritoTotalPrecio}`)      
-    // let carritoTotal=parseInt(remeraComprada + bodyComprada);
-    // console.log (carritoTotal)
-    // alert (`compraste un total de ${carritoTotal} productos`);
-    // let carritoTotalPrecio= (remera.precio * remeraComprada) + (body.precio * bodyComprada);
-    // alert (`Comprastes ${elegirRemera} Remeras y ${elegirBody} bodys, el total a pagar es ${carritoTotalPrecio}`);
+    
 }
 
 

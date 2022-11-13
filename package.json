@@ -1,0 +1,23 @@
+{
+  "name": "clementina_mandarina",
+  "version": "1.0.0",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pipiann/clementina_mandarina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pipiann/clementina_mandarina/issues"
+  },
+  "homepage": "https://github.com/Pipiann/clementina_mandarina#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
