@@ -33,7 +33,8 @@ const elegirRemera = function () {
         alert ("se agregó al carrito la compra")
     }
    
-    console.log (remeraComprada)
+    console.log (remeraComprada);
+    return remeraComprada;
 
 }
 const elegirBody = function () {
@@ -43,13 +44,20 @@ const elegirBody = function () {
     } else {
         alert ("se agregó al carrito la compra")
     }
-    console.log (bodyComprada)
+    console.log (bodyComprada);
+    return bodyComprada;
     
 }
 
 function carritoCompra () {
-    carrito.push ({remeraComprada,bodyComprada})
-    console.log (carrito)
+    console.log (remeraComprada,bodyComprada)
+    carrito.push(remeraComprada)
+
+    carrito.push(bodyComprada)
+
+    console.log(`En mi carrito tengo: ${carrito}`)
+    // carrito.push ({remeraComprada,bodyComprada})
+    // console.log (carrito)
 
     carrito.forEach ( (carritoFinal) => {
         alert (`lleva ${remeraComprada} remeras y cada una sale un precio de ${remera.precio} tambien lleva ${bodyComprada} bodys y cada uno tiene un precio de ${body.precio}`)
