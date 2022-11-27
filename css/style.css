@@ -1,3 +1,8 @@
+.carrousel__propio {
+  height: 40%;
+  width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +10,16 @@
 
 .flexbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
 }
-
-.productos {
+.flexbox__header {
+  flex-direction: column;
+}
+.flexbox__productos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
