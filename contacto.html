@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Franklin:ital@1&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('Hpw_c1G7yzbjj13es')
+</script>
+    <title>Clementina Mandarina</title>
+</head>
+<body>
+
+    <!--------------------------------------HEADER------------------------------->
+    <div class="flexbox">
+
+
+
+        <header class="flexbox__header">
+            <div>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./images/gatito clementina logo.jpg" alt="gatito clementina"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Remeras.html">Remeras</a></li>
+                            <li><a class="dropdown-item" href="#">Bodys</a></li>
+                            <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                            <li><a class="dropdown-item" href="#">Shorts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Temporada Anterior</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        
+
+        </div>
+    </header>  
+    <!-- FORMULARIO DE CONTACTO -->
+
+
+    <form id="form">
+        <div class="field">
+          <label for="from_name">Nombre</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="to_name">Teléfono</label>
+          <input type="text" name="to_name" id="to_name">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <label for="email_id">Dirección de Mail</label>
+          <input type="text" name="email_id" id="email_id">
+        </div>
+        
+      
+        <input type="submit" id="button" value="Send Email" >
+      </form>
+
+    
+    
+    
+
+
+
+<script src="./contacto.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
