@@ -1,4 +1,4 @@
-let carrito=[];
+let carrito= JSON.parse (localStorage.getItem ("carrito")) || [];
 const remerasIngreso = document.getElementById ("remerasIngreso");
 const carrito_Compra = document.getElementById ("carrito_Compra");
 const modal= document.getElementById ("modal");
@@ -73,4 +73,9 @@ carrito_Compra.addEventListener ("click", () =>{
     modal.append (total_Carrito);
     
 });
+
+const saveLocal =() =>{
+    localStorage.setItem ("carrito", JSON.stringify (carrito));
+
+}
 
