@@ -4,7 +4,23 @@
 }
 
 
-.footer{
-    // height: 50%;
-    // width: 50%;
+.footer_img {
+    background-color: nth($colores , $n:1 );
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-top: 20PX;
+}
+
+.footer_img_size{
+    width: 700px;
+    justify-self: center;
+}
+
+#carrito_Compra{
+    cursor: pointer;
+    & :hover {
+        opacity: 0.7;
+    }
 }

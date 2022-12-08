@@ -9,7 +9,7 @@ productoRemera.forEach((productoRemera) => {
     ropa.innerHTML =`
     <img src= "${productoRemera.img}">
     <h3> ${productoRemera.nombre}</h3>
-    <p class "precio"> ${productoRemera.precio} $</p>
+    <p> $ ${productoRemera.precio} </p>
     `; 
     remerasIngreso.append (ropa);
     let comprar =document.createElement ("button");

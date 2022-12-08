@@ -1,0 +1,41 @@
+#form{
+  margin-left: 40%;
+  margin-bottom: 20PX;
+  margin-top: 20px;
+    
+}
+
+.bg_contacto{
+  background-color: nth($colores, $n:1 );
+ 
+}
+
+.field {
+    margin-bottom: 10px;
+    font-family: $font-ppal;
+    font-weight: bold;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 18px;
+    
+    color: #777;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 300px;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 18px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+     
+  }
