@@ -34,16 +34,17 @@ productoRemera.forEach((productoRemera) => {
             }
         })
        }else{
-        carrito.push({
-            id: productoRemera.id,
-            nombre: productoRemera.nombre,
-            talle: productoRemera.talle,
-            precio: productoRemera.precio,  
-            cantidad: productoRemera.cantidad,       
+            carrito.push({
+                id: productoRemera.id,
+                nombre: productoRemera.nombre,
+                talle: productoRemera.talle,
+                precio: productoRemera.precio,  
+                cantidad: productoRemera.cantidad,       
 
-        });
+            });
         };
         contador_Carrito ();
+        saveLocal ();
     });
     
     
@@ -68,4 +69,5 @@ const saveLocal =() =>{
     localStorage.setItem ("carrito", JSON.stringify (carrito));
 
 }
+
 

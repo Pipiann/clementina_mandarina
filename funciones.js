@@ -24,7 +24,7 @@ const carrito_carga= () =>{
         let carrito_modal= document.createElement("div");
         carrito_modal.className="carrito_modal";
         carrito_modal.innerHTML= `
-        <img src ="${productoRemera.img}">
+        
         <h3>${productoRemera.nombre}</h3>
         <p>$ ${productoRemera.precio} </p>
         <p> Cantidad: ${productoRemera.cantidad}</p>
@@ -74,5 +74,9 @@ const eliminar_producto =() =>{
 
 const contador_Carrito= () =>{
     cantidad_Carrito.style.display= "block"
-    cantidad_Carrito.innerText= carrito.lenght;
+    const carrito_length= carrito.length;
+    localStorage.setItem ("carrito_length", JSON.stringify (carrito_length));
+    cantidad_Carrito.innerText= JSON.parse (localStorage.getItem("carrito_length"));
 }
+
+contador_Carrito ();
