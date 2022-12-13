@@ -70,6 +70,19 @@
   opacity: 0.7;
 }
 
+.cantidad_Carrito {
+  background-color: red;
+  color: antiquewhite;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 13px;
+  top: 159px;
+  right: 21px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
 #form {
   margin-left: 40%;
   margin-bottom: 20PX;
@@ -106,6 +119,65 @@ input[type=submit] {
   background-color: #4460AA;
   color: #fff;
   border: none;
+}
+
+.modal_estilo {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #80ffdb;
+  background-color: #ff3cc7;
+  display: none;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+.modal_estilo :-webkit-scrollbar {
+  display: none;
+}
+.modal_estilo _header {
+  display: flex;
+  flex-direction: row;
+  justify-self: start;
+  font-family: "Ubuntu", sans-serif;
+  color: #00e5e8;
+  width: 100%;
+}
+
+.modal_Button {
+  cursor: pointer;
+  text-align: right;
+}
+
+.carrito_modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  width: 70%;
+  margin: 10px;
+}
+
+.modal_estilo > div > img {
+  height: 120px;
+  width: 120px;
+}
+
+.carrito_modal_total {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.carrito_eliminar {
+  cursor: pointer;
+  padding: 10px;
+  text-align: right;
 }
 
 * {

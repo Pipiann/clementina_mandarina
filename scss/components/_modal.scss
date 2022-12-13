@@ -1,0 +1,68 @@
+
+.modal_estilo{
+width: 80%;
+margin: 0 10%;
+max-height: 88vh;
+color: nth($colores, $n:6 );
+background-color: nth($colores, $n:2 );
+display: none;
+flex-direction: column;
+
+
+font-family: $font-ppal;
+
+position: fixed;
+overflow: auto;
+z-index: 9;
+top: 12vh;
+scrollbar-color: none;
+
+& :-webkit-scrollbar{
+    display:none;
+}
+
+_header{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;    
+    font-family: $font-ppal;
+    color: nth($colores, $n:5 );
+    width: 100%;
+    
+
+
+}
+}
+
+.modal_Button{
+    cursor: pointer;
+    text-align: right;
+}
+
+
+
+.carrito_modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal_estilo>div>img {
+    height: 120px;
+    width: 120px;
+}
+.carrito_modal_total {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carrito_eliminar{
+    cursor: pointer;
+    padding: 10px;
+    text-align: right;
+}
