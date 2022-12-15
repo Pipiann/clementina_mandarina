@@ -198,15 +198,25 @@ input[type=submit] {
   text-align: right;
 }
 
+#comentarios {
+  padding: 20px;
+}
+
 .comentarios_class {
   background-color: antiquewhite;
   border-color: black;
   font-size: 15px;
   border: double;
   text-align: center;
-  width: 200px;
-  height: fit-content;
-  display: -ms-inline-grid;
+  width: 350px;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 }
 
 * {
