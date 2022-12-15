@@ -24,7 +24,7 @@ const carrito_carga= () =>{
         let carrito_modal= document.createElement("div");
         carrito_modal.className="carrito_modal";
         carrito_modal.innerHTML= `
-        
+        <img  class="img_productos" src= "${productoRemera.img}">
         <h3>${productoRemera.nombre}</h3>
         <p>$ ${productoRemera.precio} </p>
         <p> Cantidad: ${productoRemera.cantidad}</p>

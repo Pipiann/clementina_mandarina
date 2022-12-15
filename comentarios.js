@@ -1,7 +1,7 @@
 let comentarios= document.querySelector("#comentarios");
 
 
-fetch('https://jsonplaceholder.typicode.com/comments?userId=10')
+fetch('https://jsonplaceholder.typicode.com/comments?postId=10')
   .then(response => response.json())
   .then((data) => {
 

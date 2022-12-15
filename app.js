@@ -11,7 +11,7 @@ productoRemera.forEach((productoRemera) => {
     ropa.className= "ropa_grilla";
     ropa.innerHTML =`
 
-    <img src= "${productoRemera.img}">
+    <img  class="img_productos" src= "${productoRemera.img}">
     <h3> ${productoRemera.nombre}</h3>
     <p> $ ${productoRemera.precio} </p>
     `; 
@@ -36,6 +36,7 @@ productoRemera.forEach((productoRemera) => {
        }else{
             carrito.push({
                 id: productoRemera.id,
+                img: productoRemera.img,
                 nombre: productoRemera.nombre,
                 talle: productoRemera.talle,
                 precio: productoRemera.precio,  

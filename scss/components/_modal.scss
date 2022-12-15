@@ -3,8 +3,8 @@
 width: 80%;
 margin: 0 10%;
 max-height: 88vh;
-color: nth($colores, $n:6 );
-background-color: nth($colores, $n:2 );
+color: black;
+background-color: nth($colores, $n:6 );
 display: none;
 flex-direction: column;
 
@@ -43,9 +43,9 @@ _header{
 
 .carrito_modal {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 70%;
     margin: 10px;
 }
