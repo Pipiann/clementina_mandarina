@@ -1,6 +1,24 @@
 .carrousel__propio {
   height: 40%;
-  width: 80%;
+  width: 95%;
+  padding: 20PX;
+  padding-bottom: 50PX;
+}
+
+.card_index_prop {
+  padding: 20px;
+}
+
+.card_text_prop {
+  text-align: center;
+}
+
+.a_prop {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff3cc7;
 }
 
 .footer_img {
@@ -178,6 +196,17 @@ input[type=submit] {
   cursor: pointer;
   padding: 10px;
   text-align: right;
+}
+
+.comentarios_class {
+  background-color: antiquewhite;
+  border-color: black;
+  font-size: 15px;
+  border: double;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+  display: -ms-inline-grid;
 }
 
 * {

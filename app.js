@@ -71,3 +71,4 @@ const saveLocal =() =>{
 }
 
 
+contador_Carrito ();

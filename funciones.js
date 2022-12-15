@@ -67,16 +67,17 @@ const eliminar_producto =() =>{
         
     });
     contador_Carrito ();
+    saveLocal ();
     carrito_carga ();
     
 
 }
 
 const contador_Carrito= () =>{
-    cantidad_Carrito.style.display= "block"
+    cantidad_Carrito.style.display= "block";
     const carrito_length= carrito.length;
     localStorage.setItem ("carrito_length", JSON.stringify (carrito_length));
     cantidad_Carrito.innerText= JSON.parse (localStorage.getItem("carrito_length"));
-}
+};
 
-contador_Carrito ();
+// contador_Carrito ();

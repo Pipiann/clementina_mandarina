@@ -1,9 +1,27 @@
 .carrousel__propio{
     height: 40%;
-    width: 80%;
+    width: 95%;
+    padding: 20PX;
+    padding-bottom: 50PX;
 }
 
+.card_index_prop{
+    padding: 20px;
+}
 
+.card_text_prop{
+    text-align: center;
+    
+    
+}
+
+.a_prop{
+    text-decoration: none;
+    font-family: $font-ppal;
+    font-size: 15px;
+    font-weight: bold;
+    color: nth($colores , $n:2 );
+}
 .footer_img {
     background-color: nth($colores , $n:1 );
     display: flex;
